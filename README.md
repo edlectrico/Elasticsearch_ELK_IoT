@@ -23,7 +23,7 @@ Obviously, we will need a Elastic Stack (previously known as ELK Stack) to Colle
 username: elasticsearch
 password: changeme
 ```
-Now, if you have used (which I highly recommend) the given [logstash-tcp.conf]() file, then you should be able to test the whole stack by executing the given Python script. This script just sends via socket an String to Logstash. Logstash receives it and then sends it back to Elasticsearch. 
+Now, if you have used (which I highly recommend) the given [logstash-tcp.conf](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash-tcp.conf) file, then you should be able to test the whole stack by executing the given Python script. This script just sends via socket an String to Logstash. Logstash receives it and then sends it back to Elasticsearch. 
 
 To check that the message has been correctly sent to both Logstash and Elasticsearch, do the following:
 ### Logstash
