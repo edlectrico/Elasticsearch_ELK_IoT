@@ -44,7 +44,7 @@ To check that the message has been correctly sent to both Logstash and Elasticse
 ### Logstash
 Just watch the terminal in which you have previously launched the Logstash instance. You should see something like the following message:
 
-![logstash terminal](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash_terminal_output.png "Logstash terminal output")
+![logstash terminal](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logastash_terminal_output.png "Logstash terminal output")
 
 ### Elasticsearch 
 In a new terminal just type:
