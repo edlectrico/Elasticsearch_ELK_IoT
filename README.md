@@ -46,7 +46,7 @@ To check that the message has been correctly sent to both Logstash and Elasticse
 ### Logstash terminal
 Just watch the terminal in which you have previously launched the Logstash instance. You should see something like the following message:
 
-![logstash terminal](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logastash_terminal_output.png "Logstash terminal output")
+![logstash terminal](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/screenshots/logastash_terminal_output.png "Logstash terminal output")
 
 ### Elasticsearch terminal
 In a new terminal just type:
@@ -72,7 +72,7 @@ If you configure the [logstash-tcp.conf](https://github.com/edlectrico/Elasticse
 }
 ```
 In fact, if you check the logastash terminal, you should see how data is reaching logstash:
-![logstash_terminal_output_json](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash_terminal_output_json.png "Logstash terminal output json")
+![logstash_terminal_output_json](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/screenshots/logstash_terminal_output_json.png "Logstash terminal output json")
 
 Now go to your Kibana browser and you should be able to, at last, see that the messages have arrived to Elasticsearch:
-![kibana results](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/kibana_results.png "Logstash terminal output")
+![kibana results](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/screenshots/kibana_results.png "Logstash terminal output")
