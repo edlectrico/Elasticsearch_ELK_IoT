@@ -8,21 +8,36 @@ Obviously, we will need a Elastic Stack (previously known as ELK Stack) to Colle
 
 ### Download and install Logstash
 1. Download Logstash from [here](https://www.elastic.co/downloads/logstash) depending on your OS version.
-2. Prepare a logstash.conf config file or copy the file given in this repository to accept input TCP connections and output the results to the Elasticsearch database.
-3. Run bin/logstash -f logstash.conf
+2. Prepare a logstash.conf config file or copy the [file given](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash-tcp.conf) in this repository to accept input TCP connections and output the results to the Elasticsearch database.
+3. Run 
+```
+bin/logstash -f path/to/logstash/configuration/file.conf
+```
+4. You should see that the TCP port given in the [logstash-tcp.conf](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash-tcp.conf) file is open and that Logstash is currently listening. 
+```
+netstat -an | grep LISTEN
+```
 
 ### Download and install Elasticsearch
 1. Download Elasticsearch from [here](https://www.elastic.co/downloads/elasticsearch) depending on your OS version.
-2. Just run bin/elasticsearch (or bin\elasticsearch.bat on Windows)
+2. Just run 
+```
+bin/elasticsearch 
+```
 
 ### Download and install Kibana
 1. Download Kibana from [here](https://www.elastic.co/downloads/kibana) depending on your OS version.
 2. Open config/kibana.yml in an editor and set the elasticsearch.url to point at your Elasticsearch instance (by default it will be a commented line, so you just have to uncomment it to point to your localhost Elasticsearch instance).
-3. Check your Kibana installation by pointing your browser at http://localhost:5601
+3. Run
+```
+bin/kibana
+```
+4. Check your Kibana installation by pointing your browser at http://localhost:5601
 ```
 username: elasticsearch
 password: changeme
 ```
+
 Now, if you have used (which I highly recommend) the given [logstash-tcp.conf](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash-tcp.conf) file, then you should be able to test the whole stack by executing the given Python script. This script just sends via socket an String to Logstash. Logstash receives it and then sends it back to Elasticsearch. 
 
 To check that the message has been correctly sent to both Logstash and Elasticsearch, do the following:
