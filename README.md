@@ -40,7 +40,7 @@ password: changeme
 
 ## Check out the whole thing
 
-Once we have the three instances running, let's send a message to Logstash. Now, if you have used (which I highly recommend) the given [logstash-tcp.conf](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash-tcp.conf) file, then you should be able to test the whole stack by executing the [simpleSender](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/simpleSender.py) Python script. This script just sends via socket an String to Logstash using the 5959 port. Logstash receives it and then sends it back to Elasticsearch. 
+Once we have the three instances running, let's send a message to Logstash. Now, if you have used (which I highly recommend) the given [logstash-tcp.conf](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash-tcp.conf) file, then you should be able to test the whole stack by executing the [simpleSender](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/scripts/simpleSender.py) Python script. This script just sends via socket an String to Logstash using the 5959 port. Logstash receives it and then sends it back to Elasticsearch. 
 To check that the message has been correctly sent to both Logstash and Elasticsearch, do the following:
 
 ### Logstash terminal
