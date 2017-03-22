@@ -63,7 +63,7 @@ $ curl -XGET localhost:9200/_search
 If you configure the [logstash-tcp.conf](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash-tcp.conf) to receive JSON objects, then use the [jsonSender](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/scripts/jsonSender.py) script. This Python script will send random temperature values as JSON objects with the following structure:
 ```
 {
-      "hostname" => "edlectrico-entelgy",
+      "hostname" => "hostname-test",
     "@timestamp" => 2017-03-22T11:19:03.590Z,
           "port" => 42598,
       "@version" => "1",
