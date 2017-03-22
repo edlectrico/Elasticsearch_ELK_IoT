@@ -71,3 +71,8 @@ If you configure the [logstash-tcp.conf](https://github.com/edlectrico/Elasticse
        "message" => "temperature 34.221152 C"
 }
 ```
+In fact, if you check the logastash terminal, you should see how data is reaching logstash:
+![logstash_terminal_output_json](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/logstash_terminal_output_json.png "Logstash terminal output json")
+
+Now go to your Kibana browser and you should be able to, at last, see that the messages have arrived to Elasticsearch:
+![kibana results](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/kibana_results.png "Logstash terminal output")
