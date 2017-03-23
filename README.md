@@ -56,7 +56,7 @@ Just watch the terminal in which you have previously launched the Logstash insta
 ### Elasticsearch terminal
 In a new terminal just type:
 ```
-curl -XGET localhost:9200/_searchsearch
+curl -XGET localhost:9200/_search
 ```
 You should see a response like:
 ```
