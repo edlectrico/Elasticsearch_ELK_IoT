@@ -3,6 +3,9 @@ An Elasticsearch Stack based configuration to monitor sensor data into Kibana.
 
 The idea of this repository is to give some tips and config files (for Logstash, for example) to deploy a PoC in which we are  able to monitor data received from sensors.
 
+The following diagram depicts what we want to achieve here:
+![elasticstack](https://github.com/edlectrico/Elasticsearch_ELK_IoT/blob/master/screenshots/elasticstack.png "elasticstack")
+
 ## Requisites
 Obviously, we will need a Elastic Stack (previously known as ELK Stack) to Collect, Store and Visualize the data. The steps to deploy such environment are given below. 
 <b>Note:</b> Here we've used the version 5.x of the stack.
